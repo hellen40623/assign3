@@ -139,7 +139,7 @@ void showSlot(int col, int row, int slotState){
     case SLOT_SAFE:
           fill(255);
           rect(x,y,SLOT_SIZE,SLOT_SIZE);
-          int count = countNeighborBombs(col,row);
+          int count = int(countNeighborBombs(col,row));
           if (count != 0){
             fill(0);
             textSize(SLOT_SIZE*3/5);
