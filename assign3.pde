@@ -185,8 +185,8 @@ void mousePressed(){
        mouseY >= iy && mouseY <= iy+sideLength){
     
     // --------------- put you code here -------     
-int col =(int (mouseX)-ix)/100;
-  int row = (int (mouseY)-iy)/100 ;
+int col=int(( int(mouseX) - ix ) / SLOT_SIZE);
+  int row = int(( int(mouseY) - iy ) / SLOT_SIZE);
   
   if (slot[col][row] == SLOT_OFF){
      showSlot(col, row, SLOT_SAFE);
