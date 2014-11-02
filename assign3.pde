@@ -56,7 +56,7 @@ void draw(){
           textSize(16);
           fill(0);
           text("Choose # of bombs to continue:",10,width/3-24);
-          int spacing = width/9;
+          int spacing = int(width/9);
           for (int i=0; i<9; i++){
             fill(255);
             rect(i*spacing, width/3, spacing, 50);
@@ -123,8 +123,8 @@ void drawEmptySlots(){
 }
 
 void showSlot(int col, int row, int slotState){
-  int x = ix + col*SLOT_SIZE;
-  int y = iy + row*SLOT_SIZE;
+  int x = int(ix + col*SLOT_SIZE);
+  int y = int(iy + row*SLOT_SIZE);
   switch (slotState){
     case SLOT_OFF:
          fill(222,119,15);
